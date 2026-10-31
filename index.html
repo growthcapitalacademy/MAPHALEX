@@ -14,7 +14,7 @@ tailwind.config={theme:{extend:{colors:{navy:{50:'#F3F7FC',100:'#E6EEF8',200:'#C
 </script>
 <style>
 html{background:#F3F7FC}
-.bgsec{background:linear-gradient(rgba(15,36,68,.84),rgba(22,46,84,.78)),url('Trade2.jpg') center/cover fixed #162E54}
+.bgsec{background:linear-gradient(rgba(15,36,68,.84),rgba(22,46,84,.78)),url('Trade2.jpeg') center/cover fixed #162E54}
 .hero{background:linear-gradient(110deg,rgba(15,36,68,.94),rgba(30,58,102,.78)),url('Trade1.jpeg') center/cover #162E54}
 .grad{background:linear-gradient(120deg,#E6EEF8,#A9C0E0 55%,#6F8FBF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;background-size:200% auto;animation:shine 6s linear infinite}
 .card{background:#fff;border:1px solid #CFDDF0;border-radius:1rem;box-shadow:0 6px 24px rgba(15,36,68,.06);transition:transform .3s,box-shadow .3s,border-color .3s}
@@ -93,6 +93,7 @@ html{background:#F3F7FC}
    <p class="text-navy-100 text-sm leading-relaxed">For qualified traders, business partners, and future hybrid capital participation inquiries.</p>
    <div class="space-y-4 pt-4">
     <div class="card flex items-start gap-4 p-4"><div class="w-10 h-10 rounded-lg bg-navy-100 border border-navy-200 flex items-center justify-center text-navy-700 shrink-0"><i data-lucide="mail" class="w-5 h-5"></i></div><div class="overflow-hidden"><h4 class="text-xs font-bold text-navy-500 uppercase tracking-wider">Official Email Contact</h4><a href="mailto:maphalex01@gmail.com" class="font-bold text-navy-800 hover:text-navy-500 block truncate mt-0.5">maphalex01@gmail.com</a></div></div>
+    <div class="card flex items-start gap-4 p-4"><div class="w-10 h-10 rounded-lg bg-navy-100 border border-navy-200 flex items-center justify-center text-navy-700 shrink-0"><i data-lucide="message-circle" class="w-5 h-5"></i></div><div><h4 class="text-xs font-bold text-navy-500 uppercase tracking-wider">WhatsApp</h4><a href="https://wa.me/18493512165" target="_blank" rel="noopener" class="font-bold text-navy-800 hover:text-navy-500 block mt-0.5">+1 (849) 351-2165</a></div></div>
     <div class="card flex items-start gap-4 p-4"><div class="w-10 h-10 rounded-lg bg-navy-100 border border-navy-200 flex items-center justify-center text-navy-700 shrink-0"><i data-lucide="map-pin" class="w-5 h-5"></i></div><div><h4 class="text-xs font-bold text-navy-500 uppercase tracking-wider">Jurisdiction</h4><p class="text-sm font-bold text-navy-800 mt-0.5">Dominican Republic (LLC Registered)</p></div></div>
    </div>
   </div>
@@ -114,7 +115,7 @@ html{background:#F3F7FC}
 <footer class="bg-navy-800 text-white border-t-4 border-navy-400 py-12">
  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
   <div class="flex items-center gap-4"><img src="Maphalex.jpeg" alt="MAPHALEX Logo" class="w-14 h-14 rounded-lg object-cover border-2 border-white/40"><div><p class="font-serif text-lg font-bold">MAPHALEX TRADING & INVESTMENT COMPANY</p><p class="text-xs text-navy-200 mt-0.5">© 2025 MAPHALEX Trading & Investment Company LLC. All Rights Reserved.</p></div></div>
-  <div class="text-center sm:text-right"><a href="mailto:maphalex01@gmail.com" class="text-xs text-navy-100 hover:underline font-semibold block mb-1">maphalex01@gmail.com</a><p class="text-xs text-navy-200 max-w-md">Confidential institutional capital framework. Past performance does not guarantee future results.</p></div>
+  <div class="text-center sm:text-right"><a href="mailto:maphalex01@gmail.com" class="text-xs text-navy-100 hover:underline font-semibold block mb-1">maphalex01@gmail.com</a><a href="https://wa.me/18493512165" target="_blank" rel="noopener" class="text-xs text-navy-100 hover:underline font-semibold block mb-1">WhatsApp: +1 (849) 351-2165</a><p class="text-xs text-navy-200 max-w-md">Confidential institutional capital framework. Past performance does not guarantee future results.</p></div>
  </div>
 </footer>
 
@@ -188,7 +189,7 @@ const pr=document.getElementById('prog');
 addEventListener('scroll',()=>{pr.style.transform=`scaleX(${scrollY/(document.documentElement.scrollHeight-innerHeight)})`},{passive:true});
 document.getElementById('menu-btn').onclick=()=>document.getElementById('mobile-menu').classList.toggle('hidden');
 document.querySelectorAll('#mobile-menu a').forEach(a=>a.onclick=()=>document.getElementById('mobile-menu').classList.add('hidden'));
-document.getElementById('contact-form').addEventListener('submit',e=>{e.preventDefault();alert('Thank you for contacting MAPHALEX. Your inquiry has been logged securely.');e.target.reset()});
+document.getElementById('contact-form').addEventListener('submit',e=>{e.preventDefault();const f=e.target.elements;const msg=`Hello MAPHALEX,\nName: ${f[0].value}\nEmail: ${f[1].value}\nInquiry: ${f[2].value}\nMessage: ${f[3].value}`;window.open('https://wa.me/18493512165?text='+encodeURIComponent(msg),'_blank');e.target.reset()});
 </script>
 </body>
 </html>
