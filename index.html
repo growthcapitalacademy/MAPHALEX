@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaphAlex | Institutional-Grade Capital Management</title>
+    <title>MaphAlex | Trade Finance & Institutional Capital Management</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -11,30 +11,25 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        gold: {
-                            50: '#FAF8F0',
-                            100: '#F4EFCB',
-                            300: '#E5D38A',
-                            400: '#D4AF37',
-                            500: '#C5A059',
-                            600: '#B8860B',
-                            700: '#996515',
-                            900: '#5A3D0A',
-                        },
-                        charcoal: {
-                            800: '#1E232A',
-                            900: '#12161A',
-                            950: '#0B0D0F'
+                        trade: {
+                            50: '#F0F6FF',
+                            100: '#E0EDFE',
+                            200: '#BAE0FD',
+                            500: '#0284C7',
+                            600: '#2563EB',
+                            700: '#1D4ED8',
+                            800: '#1E40AF',
+                            900: '#0F172A',
+                            950: '#0A192F',
                         }
                     },
                     fontFamily: {
-                        serif: ['Cinzel', 'serif'],
                         sans: ['Plus Jakarta Sans', 'sans-serif']
                     }
                 }
@@ -42,82 +37,82 @@
         }
     </script>
     <style>
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #996515 100%);
+        .blue-gradient-text {
+            background: linear-gradient(135deg, #2563EB 0%, #0284C7 50%, #1D4ED8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .gold-border-glow {
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+        .blue-border-glow {
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.12);
         }
     </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased selection:bg-gold-400 selection:text-white">
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-trade-600 selection:text-white">
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#home" class="flex items-center gap-3 group">
-                <!-- Conteneur d'image du Logo Maphalex.jpeg -->
-                <div class="w-10 h-10 rounded-lg overflow-hidden border border-gold-400 shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center bg-white">
+                <!-- Conteneur du Logo Maphalex.jpeg -->
+                <div class="w-10 h-10 rounded-lg overflow-hidden border border-trade-500/30 shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center bg-white">
                     <img src="Maphalex.jpeg" alt="MaphAlex Logo" class="w-full h-full object-cover">
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-serif font-bold text-xl tracking-widest text-slate-900 group-hover:text-gold-600 transition-colors">MAPHALEX</span>
-                    <span class="text-[9px] uppercase tracking-[0.2em] text-slate-500 font-medium">Trading & Investment Co.</span>
+                    <span class="font-bold text-xl tracking-wider text-trade-950 group-hover:text-trade-600 transition-colors">MAPHALEX</span>
+                    <span class="text-[9px] uppercase tracking-[0.2em] text-trade-500 font-bold">Trade Finance & Capital Co.</span>
                 </div>
             </a>
 
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8">
-                <a href="#home" class="text-sm font-medium text-slate-700 hover:text-gold-600 transition-colors">Home</a>
-                <a href="#about" class="text-sm font-medium text-slate-700 hover:text-gold-600 transition-colors">About Us</a>
-                <a href="#model" class="text-sm font-medium text-slate-700 hover:text-gold-600 transition-colors">Business Model</a>
-                <a href="#governance" class="text-sm font-medium text-slate-700 hover:text-gold-600 transition-colors">Risk & Governance</a>
-                <a href="#markets" class="text-sm font-medium text-slate-700 hover:text-gold-600 transition-colors">Markets</a>
-                <a href="#contact" class="px-5 py-2.5 rounded-md bg-charcoal-950 text-gold-400 text-sm font-semibold hover:bg-gold-600 hover:text-white transition-all shadow-md">Institutional Contact</a>
+                <a href="#home" class="text-sm font-semibold text-slate-700 hover:text-trade-600 transition-colors">Home</a>
+                <a href="#about" class="text-sm font-semibold text-slate-700 hover:text-trade-600 transition-colors">About Us</a>
+                <a href="#model" class="text-sm font-semibold text-slate-700 hover:text-trade-600 transition-colors">Capital Structure</a>
+                <a href="#governance" class="text-sm font-semibold text-slate-700 hover:text-trade-600 transition-colors">Risk & Governance</a>
+                <a href="#markets" class="text-sm font-semibold text-slate-700 hover:text-trade-600 transition-colors">Trade Markets</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-md bg-trade-800 text-white text-sm font-semibold hover:bg-trade-600 transition-all shadow-md shadow-trade-800/20">Institutional Contact</a>
             </nav>
 
             <!-- Mobile Menu Toggle Button -->
-            <button id="menu-btn" class="md:hidden p-2 text-slate-700 hover:text-gold-600">
+            <button id="menu-btn" class="md:hidden p-2 text-slate-700 hover:text-trade-600">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
 
         <!-- Mobile Navigation Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
-            <a href="#home" class="block py-2 text-slate-700 hover:text-gold-600 font-medium border-b border-slate-50">Home</a>
-            <a href="#about" class="block py-2 text-slate-700 hover:text-gold-600 font-medium border-b border-slate-50">About Us</a>
-            <a href="#model" class="block py-2 text-slate-700 hover:text-gold-600 font-medium border-b border-slate-50">Business Model</a>
-            <a href="#governance" class="block py-2 text-slate-700 hover:text-gold-600 font-medium border-b border-slate-50">Risk & Governance</a>
-            <a href="#markets" class="block py-2 text-slate-700 hover:text-gold-600 font-medium border-b border-slate-50">Markets</a>
-            <a href="#contact" class="block w-full text-center mt-4 py-3 bg-charcoal-950 text-gold-400 rounded-md font-semibold">Institutional Contact</a>
+            <a href="#home" class="block py-2 text-slate-700 hover:text-trade-600 font-medium border-b border-slate-50">Home</a>
+            <a href="#about" class="block py-2 text-slate-700 hover:text-trade-600 font-medium border-b border-slate-50">About Us</a>
+            <a href="#model" class="block py-2 text-slate-700 hover:text-trade-600 font-medium border-b border-slate-50">Capital Structure</a>
+            <a href="#governance" class="block py-2 text-slate-700 hover:text-trade-600 font-medium border-b border-slate-50">Risk & Governance</a>
+            <a href="#markets" class="block py-2 text-slate-700 hover:text-trade-600 font-medium border-b border-slate-50">Trade Markets</a>
+            <a href="#contact" class="block w-full text-center mt-4 py-3 bg-trade-800 text-white rounded-md font-semibold">Institutional Contact</a>
         </div>
     </header>
 
     <main>
         <!-- HERO SECTION -->
-        <section id="home" class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden bg-gradient-to-b from-slate-50/80 via-white to-white">
+        <section id="home" class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden bg-gradient-to-b from-trade-50/60 via-white to-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-12 gap-12 items-center">
                     <div class="lg:col-span-7 space-y-8">
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-50 border border-gold-300/60">
-                            <i data-lucide="shield-check" class="w-4 h-4 text-gold-600"></i>
-                            <span class="text-xs font-semibold text-gold-900 uppercase tracking-wider">Institutional Capital Management • Dominican Republic LLC</span>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-trade-50 border border-trade-200">
+                            <i data-lucide="globe-2" class="w-4 h-4 text-trade-600"></i>
+                            <span class="text-xs font-bold text-trade-800 uppercase tracking-wider">Trade Finance & Institutional Capital • Dominican Republic LLC</span>
                         </div>
-                        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.15]">
-                            Capital Preservation <br>
-                            <span class="gold-gradient-text">Before Profit Maximization</span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-trade-950 leading-[1.15] tracking-tight">
+                            Institutional Trade Finance & <br>
+                            <span class="blue-gradient-text">Structured Capital Deployment</span>
                         </h1>
                         <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
-                            MaphAlex is a proprietary trading and investment firm deploying capital across global multi-asset markets under strict, tranche-based risk frameworks and institutional controls.
+                            MaphAlex is a proprietary trading and investment firm deploying capital across multi-asset global trade markets under strict risk control frameworks, tranche-based liquidity allocations, and institutional oversight.
                         </p>
                         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                            <a href="#model" class="px-8 py-4 rounded-md bg-charcoal-950 text-gold-400 font-semibold hover:bg-gold-600 hover:text-white transition-all shadow-lg text-center flex items-center justify-center gap-2">
-                                <span>Explore Hybrid Model</span>
+                            <a href="#model" class="px-8 py-4 rounded-md bg-trade-800 text-white font-semibold hover:bg-trade-600 transition-all shadow-lg shadow-trade-800/25 text-center flex items-center justify-center gap-2">
+                                <span>Explore Capital Model</span>
                                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
                             </a>
-                            <a href="#governance" class="px-8 py-4 rounded-md bg-white border border-slate-300 text-slate-800 font-semibold hover:bg-slate-50 hover:border-gold-400 transition-all text-center">
+                            <a href="#governance" class="px-8 py-4 rounded-md bg-white border border-slate-300 text-slate-800 font-semibold hover:bg-trade-50 hover:border-trade-500 transition-all text-center">
                                 View Risk Architecture
                             </a>
                         </div>
@@ -125,16 +120,16 @@
                         <!-- Key Metrics Bar -->
                         <div class="pt-8 border-t border-slate-200 grid grid-cols-3 gap-6">
                             <div>
-                                <p class="text-3xl font-bold text-slate-900 font-serif">$130K</p>
-                                <p class="text-xs text-slate-500 font-medium uppercase mt-1">Initial Prop Pool</p>
+                                <p class="text-3xl font-extrabold text-trade-950">$130K</p>
+                                <p class="text-xs text-slate-500 font-semibold uppercase mt-1">Initial Prop Pool</p>
                             </div>
                             <div>
-                                <p class="text-3xl font-bold text-gold-600 font-serif">8% - 10%</p>
-                                <p class="text-xs text-slate-500 font-medium uppercase mt-1">Hard Drawdown Cap</p>
+                                <p class="text-3xl font-extrabold text-trade-600">8% - 10%</p>
+                                <p class="text-xs text-slate-500 font-semibold uppercase mt-1">Hard Drawdown Cap</p>
                             </div>
                             <div>
-                                <p class="text-3xl font-bold text-slate-900 font-serif">10 Traders</p>
-                                <p class="text-xs text-slate-500 font-medium uppercase mt-1">Pilot Desks</p>
+                                <p class="text-3xl font-extrabold text-trade-950">10 Desks</p>
+                                <p class="text-xs text-slate-500 font-semibold uppercase mt-1">Pilot Desks</p>
                             </div>
                         </div>
                     </div>
@@ -142,38 +137,38 @@
                     <!-- Hero Graphic Card -->
                     <div class="lg:col-span-5">
                         <div class="relative mx-auto max-w-md lg:max-w-none">
-                            <div class="bg-charcoal-950 rounded-2xl p-8 text-white shadow-2xl border border-gold-400/30 relative z-10">
+                            <div class="bg-trade-950 rounded-2xl p-8 text-white shadow-2xl border border-trade-800 relative z-10 blue-border-glow">
                                 <div class="flex items-center justify-between pb-6 border-b border-slate-800">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
-                                        <span class="text-xs font-mono text-slate-400 uppercase tracking-widest">Phase 1 Active Engine</span>
+                                        <div class="w-3 h-3 rounded-full bg-trade-500 animate-pulse"></div>
+                                        <span class="text-xs font-mono text-trade-200 uppercase tracking-widest">Phase 1 Active Engine</span>
                                     </div>
-                                    <span class="text-xs font-mono text-gold-400 bg-gold-400/10 px-2.5 py-1 rounded">Dominican Republic</span>
+                                    <span class="text-xs font-mono text-white bg-trade-800 px-2.5 py-1 rounded border border-trade-700">Dominican Republic</span>
                                 </div>
                                 <div class="py-8 space-y-6">
                                     <div class="flex justify-between items-center">
-                                        <span class="text-sm text-slate-400">Trading Model</span>
-                                        <span class="font-semibold text-white">Proprietary Capital</span>
+                                        <span class="text-sm text-slate-300">Capital Framework</span>
+                                        <span class="font-semibold text-white">Proprietary Liquidity</span>
                                     </div>
                                     <div class="flex justify-between items-center">
-                                        <span class="text-sm text-slate-400">Daily Loss Safeguard</span>
-                                        <span class="font-semibold text-gold-400 font-mono">2.0% Maximum</span>
+                                        <span class="text-sm text-slate-300">Daily Risk Safeguard</span>
+                                        <span class="font-semibold text-trade-200 font-mono">2.0% Maximum</span>
                                     </div>
                                     <div class="flex justify-between items-center">
-                                        <span class="text-sm text-slate-400">Execution Governance</span>
-                                        <span class="font-semibold text-emerald-400">Automated Kill-Switch</span>
+                                        <span class="text-sm text-slate-300">Trade Execution</span>
+                                        <span class="font-semibold text-sky-400">Automated Kill-Switch</span>
                                     </div>
                                     <div class="flex justify-between items-center">
-                                        <span class="text-sm text-slate-400">Custody Standard</span>
-                                        <span class="font-semibold text-white">Dual-Auth Control</span>
+                                        <span class="text-sm text-slate-300">Custody Control</span>
+                                        <span class="font-semibold text-white">Dual-Auth Escrow</span>
                                     </div>
                                 </div>
-                                <div class="pt-6 border-t border-slate-800 bg-charcoal-900 -mx-8 -mb-8 p-6 rounded-b-2xl flex items-center justify-between">
-                                    <span class="text-xs text-slate-400">Transition Readiness</span>
-                                    <span class="text-xs font-semibold text-gold-400">Phase 2 Hybrid Pending</span>
+                                <div class="pt-6 border-t border-slate-800 bg-trade-900 -mx-8 -mb-8 p-6 rounded-b-2xl flex items-center justify-between">
+                                    <span class="text-xs text-slate-400">Hybrid Onboarding</span>
+                                    <span class="text-xs font-semibold text-trade-200">Phase 2 Pending</span>
                                 </div>
                             </div>
-                            <div class="absolute -bottom-4 -right-4 w-full h-full rounded-2xl bg-gold-400/20 -z-10 blur-xl"></div>
+                            <div class="absolute -bottom-4 -right-4 w-full h-full rounded-2xl bg-trade-600/10 -z-10 blur-xl"></div>
                         </div>
                     </div>
                 </div>
@@ -184,41 +179,41 @@
         <section id="about" class="py-20 bg-white border-t border-slate-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-semibold text-gold-600 uppercase tracking-widest mb-3">Corporate Foundations</h2>
-                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Institutional Governance & Legal Structure</h3>
+                    <h2 class="text-xs font-bold text-trade-600 uppercase tracking-widest mb-3">Corporate Overview</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">Institutional Trade Governance</h3>
                     <p class="text-slate-600 mt-4 leading-relaxed">
-                        MaphAlex is legally formed as a Limited Liability Company (LLC) under the corporate laws of the Dominican Republic, engineered for long-term sustainability and capital accountability.
+                        MaphAlex is legally established as a Limited Liability Company (LLC) under corporate regulations in the Dominican Republic, engineered to bridge structured trade liquidity with multi-asset capital allocation.
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-400 transition-all hover:shadow-md">
-                        <div class="w-12 h-12 rounded-lg bg-gold-100 flex items-center justify-center text-gold-700 mb-6">
+                    <div class="p-8 rounded-xl bg-trade-50/40 border border-trade-100 hover:border-trade-500 transition-all hover:shadow-md">
+                        <div class="w-12 h-12 rounded-lg bg-trade-100 flex items-center justify-center text-trade-700 mb-6">
                             <i data-lucide="target" class="w-6 h-6"></i>
                         </div>
-                        <h4 class="font-serif text-xl font-bold text-slate-900 mb-3">Our Mission</h4>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Our Mission</h4>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            To deploy capital through disciplined, risk-controlled, and strategically diversified trading operations across global financial markets while prioritizing capital preservation.
+                            To deploy capital through disciplined, risk-controlled trade execution across global markets, maintaining absolute capital preservation while generating consistent returns.
                         </p>
                     </div>
 
-                    <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-400 transition-all hover:shadow-md">
-                        <div class="w-12 h-12 rounded-lg bg-gold-100 flex items-center justify-center text-gold-700 mb-6">
-                            <i data-lucide="eye" class="w-6 h-6"></i>
+                    <div class="p-8 rounded-xl bg-trade-50/40 border border-trade-100 hover:border-trade-500 transition-all hover:shadow-md">
+                        <div class="w-12 h-12 rounded-lg bg-trade-100 flex items-center justify-center text-trade-700 mb-6">
+                            <i data-lucide="trending-up" class="w-6 h-6"></i>
                         </div>
-                        <h4 class="font-serif text-xl font-bold text-slate-900 mb-3">Our Vision</h4>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Our Vision</h4>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            To evolve from a proprietary trading operation into a structured hybrid capital platform recognized internationally for disciplined risk management and transparent investor alignment.
+                            To evolve from proprietary liquidity deployment into a world-class hybrid trade finance platform recognized for operational transparency and strict governance standards.
                         </p>
                     </div>
 
-                    <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 hover:border-gold-400 transition-all hover:shadow-md">
-                        <div class="w-12 h-12 rounded-lg bg-gold-100 flex items-center justify-center text-gold-700 mb-6">
-                            <i data-lucide="scale" class="w-6 h-6"></i>
+                    <div class="p-8 rounded-xl bg-trade-50/40 border border-trade-100 hover:border-trade-500 transition-all hover:shadow-md">
+                        <div class="w-12 h-12 rounded-lg bg-trade-100 flex items-center justify-center text-trade-700 mb-6">
+                            <i data-lucide="shield-alert" class="w-6 h-6"></i>
                         </div>
-                        <h4 class="font-serif text-xl font-bold text-slate-900 mb-3">Foundational Pillars</h4>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Core Discipline</h4>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Built upon tranche-based capital deployment, absolute loss mitigation, real-time exposure monitoring, and institutional-grade internal oversight.
+                            Structured tranche deployment, non-negotiable drawdown stops, multi-tier risk oversight, and segregated financial control architectures.
                         </p>
                     </div>
                 </div>
@@ -229,50 +224,50 @@
         <section id="model" class="py-20 bg-slate-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-semibold text-gold-600 uppercase tracking-widest mb-3">Phased Execution</h2>
-                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Two-Phase Capital Lifecycle</h3>
-                    <p class="text-slate-600 mt-4">Growth occurs only where governance, compliance, and operational capacity are fully aligned.</p>
+                    <h2 class="text-xs font-bold text-trade-600 uppercase tracking-widest mb-3">Operational Phasing</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">Two-Phase Capital Lifecycle</h3>
+                    <p class="text-slate-600 mt-4">Expansion occurs only upon verifiable performance metrics and fully operational compliance.</p>
                 </div>
 
                 <div class="grid lg:grid-cols-2 gap-8">
                     <!-- Phase 1 Card -->
-                    <div class="bg-white p-8 lg:p-10 rounded-2xl border-2 border-gold-400 shadow-lg relative">
-                        <span class="absolute top-6 right-6 px-3 py-1 bg-gold-100 text-gold-900 text-xs font-bold uppercase rounded-full">Active Phase</span>
-                        <h4 class="font-serif text-2xl font-bold text-slate-900 mb-2">Phase 1: Proprietary Capital Model</h4>
+                    <div class="bg-white p-8 lg:p-10 rounded-2xl border-2 border-trade-600 shadow-lg relative">
+                        <span class="absolute top-6 right-6 px-3 py-1 bg-trade-100 text-trade-800 text-xs font-bold uppercase rounded-full">Phase 1 Active</span>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Phase 1: Proprietary Capital Model</h4>
                         <p class="text-slate-500 text-sm mb-6">Internal Track Record & Validation Period</p>
                         <ul class="space-y-4 text-slate-600 text-sm mb-8">
                             <li class="flex items-start gap-3">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i>
-                                <span>Trades exclusively internally funded capital provided by the Majority Owner ($130,000 USD).</span>
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-trade-600 shrink-0 mt-0.5"></i>
+                                <span>Trades internally funded proprietary pool ($130,000 USD) provided by the Majority Owner.</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i>
-                                <span>No external investor funds accepted during this initial stage.</span>
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-trade-600 shrink-0 mt-0.5"></i>
+                                <span>No external retail or institutional investor capital accepted during validation.</span>
                             </li>
                             <li class="flex items-start gap-3">
-                                <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i>
-                                <span>90-day pilot testing execution discipline across 10 pre-vetted professional traders.</span>
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-trade-600 shrink-0 mt-0.5"></i>
+                                <span>90-day pilot testing execution consistency across 10 pre-vetted professional trading desks.</span>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Phase 2 Card -->
                     <div class="bg-white p-8 lg:p-10 rounded-2xl border border-slate-200 shadow-sm relative">
-                        <span class="absolute top-6 right-6 px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded-full">Future Activation</span>
-                        <h4 class="font-serif text-2xl font-bold text-slate-900 mb-2">Phase 2: Hybrid Expansion</h4>
-                        <p class="text-slate-500 text-sm mb-6">Qualified Investor Onboarding</p>
+                        <span class="absolute top-6 right-6 px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold uppercase rounded-full">Phase 2 Future</span>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Phase 2: Hybrid Trade Expansion</h4>
+                        <p class="text-slate-500 text-sm mb-6">Qualified Investor & Partner Onboarding</p>
                         <ul class="space-y-4 text-slate-600 text-sm mb-8">
                             <li class="flex items-start gap-3">
                                 <i data-lucide="shield" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
-                                <span>Activated only after 6 months of audited internal performance and compliance validation.</span>
+                                <span>Activated exclusively after 6 months of audited internal performance track record.</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i data-lucide="shield" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
-                                <span>Structured participation for qualified individuals and corporate business entities.</span>
+                                <span>Structured participation tiers for qualified entities and strategic partners.</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <i data-lucide="shield" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
-                                <span>Segregated custodial sub-accounts with high-water mark performance compensation.</span>
+                                <span>Segregated escrow custodial frameworks with high-water mark profit allocation.</span>
                             </li>
                         </ul>
                     </div>
@@ -284,60 +279,60 @@
         <section id="governance" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-semibold text-gold-600 uppercase tracking-widest mb-3">Institutional Controls</h2>
-                    <h3 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Risk Governance Architecture</h3>
-                    <p class="text-slate-600 mt-4">Risk controls are enforced automatically by trading systems and supervised by an independent Risk Manager.</p>
+                    <h2 class="text-xs font-bold text-trade-600 uppercase tracking-widest mb-3">Institutional Controls</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-slate-900">Trade Risk Architecture</h3>
+                    <p class="text-slate-600 mt-4">Automated risk protocols monitored in real-time by an independent Risk Management Committee.</p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8 mb-16">
-                    <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                        <div class="text-gold-600 font-mono text-2xl font-bold mb-2">2.0%</div>
+                    <div class="p-6 rounded-xl bg-trade-50/50 border border-trade-100">
+                        <div class="text-trade-700 font-mono text-3xl font-bold mb-2">2.0%</div>
                         <h4 class="font-bold text-slate-900 mb-1">Max Daily Loss Limit</h4>
-                        <p class="text-xs text-slate-500">Per trader account. Two breaches in 14 days trigger automatic review.</p>
+                        <p class="text-xs text-slate-500">Enforced per desk. Breaching twice in 14 days triggers immediate risk review.</p>
                     </div>
-                    <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                        <div class="text-gold-600 font-mono text-2xl font-bold mb-2">8% - 10%</div>
+                    <div class="p-6 rounded-xl bg-trade-50/50 border border-trade-100">
+                        <div class="text-trade-700 font-mono text-3xl font-bold mb-2">8% - 10%</div>
                         <h4 class="font-bold text-slate-900 mb-1">Hard Account Drawdown</h4>
-                        <p class="text-xs text-slate-500">Immediate account suspension and capital lockup upon breach.</p>
+                        <p class="text-xs text-slate-500">Triggers mandatory kill-switch protocol and complete trading suspension.</p>
                     </div>
-                    <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                        <div class="text-gold-600 font-mono text-2xl font-bold mb-2">5:1 Cap</div>
+                    <div class="p-6 rounded-xl bg-trade-50/50 border border-trade-100">
+                        <div class="text-trade-700 font-mono text-3xl font-bold mb-2">5:1 Cap</div>
                         <h4 class="font-bold text-slate-900 mb-1">Strict Leverage Ceiling</h4>
-                        <p class="text-xs text-slate-500">Controlled exposure relative to market volatility conditions.</p>
+                        <p class="text-xs text-slate-500">Conservative leverage restrictions relative to market asset volatility.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- MARKETS SECTION -->
-        <section id="markets" class="py-20 bg-slate-900 text-white">
+        <section id="markets" class="py-20 bg-trade-950 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-xs font-semibold text-gold-400 uppercase tracking-widest mb-3">Multi-Asset Strategy</h2>
-                    <h3 class="font-serif text-3xl sm:text-4xl font-bold">Global Market Coverage</h3>
-                    <p class="text-slate-400 mt-4">Dynamic allocation across liquid asset classes to reduce concentration risk.</p>
+                    <h2 class="text-xs font-bold text-trade-200 uppercase tracking-widest mb-3">Multi-Asset Allocation</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold">Global Trade Asset Classes</h3>
+                    <p class="text-slate-300 mt-4">Diversified market deployment designed to neutralize concentration risk.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/50">
-                        <i data-lucide="coins" class="w-8 h-8 text-gold-400 mb-4"></i>
+                    <div class="p-6 rounded-xl bg-trade-900 border border-trade-800">
+                        <i data-lucide="refresh-cw" class="w-8 h-8 text-trade-200 mb-4"></i>
                         <h4 class="font-bold text-lg mb-2">Foreign Exchange</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">Major and minor currency pairs traded under strict risk parameters.</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Major and minor currency liquidity pairs executed under tight spread parameters.</p>
                     </div>
-                    <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/50">
-                        <i data-lucide="trending-up" class="w-8 h-8 text-gold-400 mb-4"></i>
+                    <div class="p-6 rounded-xl bg-trade-900 border border-trade-800">
+                        <i data-lucide="bar-chart-2" class="w-8 h-8 text-trade-200 mb-4"></i>
                         <h4 class="font-bold text-lg mb-2">Equities & Indices</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">Short-term and macroeconomic exposure to global index benchmarks.</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Macroeconomic index hedging and short-term equity benchmark positioning.</p>
                     </div>
-                    <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/50">
-                        <i data-lucide="cpu" class="w-8 h-8 text-gold-400 mb-4"></i>
+                    <div class="p-6 rounded-xl bg-trade-900 border border-trade-800">
+                        <i data-lucide="layers" class="w-8 h-8 text-trade-200 mb-4"></i>
                         <h4 class="font-bold text-lg mb-2">Cryptocurrencies</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">Controlled spot and derivative exposure to major digital assets.</p>
+                        <p class="text-xs text-slate-300 leading-relaxed">Risk-controlled spot and derivative market allocations for digital assets.</p>
                     </div>
-                    <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/50">
-                        <i data-lucide="bar-chart-3" class="w-8 h-8 text-gold-400 mb-4"></i>
-                        <h4 class="font-bold text-lg mb-2">Commodities</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed">Precious metals, energy, and natural resource-linked instruments.</p>
+                    <div class="p-6 rounded-xl bg-trade-900 border border-trade-800">
+                        <i data-lucide="package" class="w-8 h-8 text-trade-200 mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Commodities & Resources</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">Precious metals, energy contracts, and natural resource-linked instruments.</p>
                     </div>
                 </div>
             </div>
@@ -348,15 +343,15 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-12 gap-12">
                     <div class="lg:col-span-5 space-y-6">
-                        <h2 class="text-xs font-semibold text-gold-600 uppercase tracking-widest">Institutional Inquiries</h2>
-                        <h3 class="font-serif text-3xl font-bold text-slate-900">Connect With Management</h3>
+                        <h2 class="text-xs font-bold text-trade-600 uppercase tracking-widest">Institutional Desk</h2>
+                        <h3 class="text-3xl font-bold text-slate-900">Contact Management</h3>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            For qualified traders, business partners, and future hybrid capital participation inquiries.
+                            For professional trader vetting, trade infrastructure inquiries, and Phase 2 hybrid partnership details.
                         </p>
                         
                         <div class="space-y-4 pt-4">
                             <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-gold-50 flex items-center justify-center text-gold-700 shrink-0">
+                                <div class="w-10 h-10 rounded-lg bg-trade-50 flex items-center justify-center text-trade-700 shrink-0">
                                     <i data-lucide="map-pin" class="w-5 h-5"></i>
                                 </div>
                                 <div>
@@ -365,7 +360,7 @@
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-gold-50 flex items-center justify-center text-gold-700 shrink-0">
+                                <div class="w-10 h-10 rounded-lg bg-trade-50 flex items-center justify-center text-trade-700 shrink-0">
                                     <i data-lucide="mail" class="w-5 h-5"></i>
                                 </div>
                                 <div>
@@ -381,26 +376,26 @@
                             <div class="grid sm:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name</label>
-                                    <input type="text" required class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+                                    <input type="text" required class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:border-trade-500">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
-                                    <input type="email" required class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
+                                    <input type="email" required class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:border-trade-500">
                                 </div>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1">Inquiry Type</label>
-                                <select class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:border-gold-500">
-                                    <option>Trader Evaluation & Onboarding</option>
-                                    <option>Phase 2 Hybrid Capital Information</option>
-                                    <option>Strategic Partnership</option>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Inquiry Category</label>
+                                <select class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:border-trade-500">
+                                    <option>Trader Vetting & Evaluation</option>
+                                    <option>Phase 2 Hybrid Capital Framework</option>
+                                    <option>Trade Finance Partnership</option>
                                 </select>
                             </div>
                             <div>
                                 <label class="block text-xs font-semibold text-slate-700 mb-1">Message</label>
-                                <textarea rows="4" required class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:border-gold-500"></textarea>
+                                <textarea rows="4" required class="w-full px-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:border-trade-500"></textarea>
                             </div>
-                            <button type="submit" class="w-full py-3.5 bg-charcoal-950 text-gold-400 rounded-md font-semibold text-sm hover:bg-gold-600 hover:text-white transition-colors">
+                            <button type="submit" class="w-full py-3.5 bg-trade-800 text-white rounded-md font-semibold text-sm hover:bg-trade-600 transition-colors shadow-md">
                                 Submit Confidential Inquiry
                             </button>
                         </form>
@@ -411,18 +406,18 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-charcoal-950 text-white border-t border-slate-800 py-12">
+    <footer class="bg-trade-950 text-white border-t border-slate-800 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
-                <!-- Intégration du Logo Maphalex.jpeg dans le Footer -->
-                <img src="Maphalex.jpeg" alt="MaphAlex Logo" class="w-9 h-9 rounded-lg object-cover border border-gold-400/40">
+                <!-- Logo Maphalex.jpeg dans le Footer -->
+                <img src="Maphalex.jpeg" alt="MaphAlex Logo" class="w-9 h-9 rounded-lg object-cover border border-trade-500/40">
                 <div>
-                    <p class="font-serif text-lg font-bold text-gold-400">MAPHALEX TRADING & INVESTMENT COMPANY</p>
-                    <p class="text-xs text-slate-500 mt-0.5">© 2025 MaphAlex Trading & Investment Company LLC. All Rights Reserved.</p>
+                    <p class="text-lg font-bold text-white tracking-wider">MAPHALEX TRADING & INVESTMENT COMPANY</p>
+                    <p class="text-xs text-slate-400 mt-0.5">© 2025 MaphAlex Trading & Investment Company LLC. All Rights Reserved.</p>
                 </div>
             </div>
-            <p class="text-xs text-slate-500 max-w-md text-center sm:text-right">
-                Confidential institutional capital framework. Past performance does not guarantee future results.
+            <p class="text-xs text-slate-400 max-w-md text-center sm:text-right">
+                Confidential Trade Finance & Institutional Capital Framework. Past trading performance is no guarantee of future results.
             </p>
         </div>
     </footer>
@@ -442,7 +437,7 @@
         // Contact Form Submission
         document.getElementById('contact-form').addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Thank you for contacting MaphAlex. Your inquiry has been logged securely.');
+            alert('Thank you for contacting MaphAlex Trade Desk. Your inquiry has been logged securely.');
             e.target.reset();
         });
     </script>
